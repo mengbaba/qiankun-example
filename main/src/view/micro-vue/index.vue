@@ -7,8 +7,4 @@
 </template>
 
 <style>
-#sub-vue-container{
-    height:100%;
-}
-
 </style>

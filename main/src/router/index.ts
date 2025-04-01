@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const Layouts = () => import('../layout/index.vue')
 const router = createRouter({
     history: createWebHistory(
-        '/'
+        './'
     ),
     routes: [
         {

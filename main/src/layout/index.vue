@@ -1,9 +1,18 @@
 <script lang="ts" setup>
+import { start } from 'qiankun'
+import { onMounted} from 'vue'
 import { actions } from '@/utils'
 function notice(){
     actions.setGlobalState({message:'父容器传递的消息'})
 }
-
+onMounted(()=>{
+    start({
+        prefetch: false, // 是否预先加载
+    sandbox: {
+        experimentalStyleIsolation: true // 样式隔离
+    }
+    })
+})
 </script>
 
 <template>

@@ -35,10 +35,6 @@ renderWithQiankun({
     unmount: () => {
         console.log('子应用1的 unmount');
         instance?.unmount();
-        if (instance?._container) {
-            instance._container = null
-        }
-
         instance = null;
     },
     update: () => { },
