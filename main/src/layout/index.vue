@@ -2,10 +2,12 @@
 import { start } from 'qiankun'
 import { onMounted} from 'vue'
 import { actions } from '@/utils'
-const menus = [{
+const menus = [
+{
     name:'vue3子应用',
     key:'micro-vue'
-},{
+},
+{
      name:'react子应用',
     key:'micro-react'
 }]
@@ -35,6 +37,7 @@ onMounted(()=>{
         <div class="layout-container">
             <div @click="notice">通知子应用消息</div>
             <router-view />
+            <div id="micro-container"></div>
         </div>
     </div>
 </template>

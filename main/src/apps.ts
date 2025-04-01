@@ -10,5 +10,11 @@ export default [
         entry: 'http://localhost:7102/',
         container: '#sub-react-container',
         activeRule: '/micro-react'
-    }
+    },
+    {
+        name: 'micro-html',
+        entry: 'http://localhost:5501/qiankun-example/micro-html-app/',
+        container: '#micro-container',
+        activeRule: '/micro-html'
+    },
 ]

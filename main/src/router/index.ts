@@ -20,6 +20,11 @@ const router = createRouter({
 
                 },
                 {
+                    path: '/micro-html',
+                    component: () => import('../view/micro-vue/index.vue'),
+
+                },
+                {
                     path: '/micro-react',
                     component: () => import('../view/micro-react/index.vue')
                 }
