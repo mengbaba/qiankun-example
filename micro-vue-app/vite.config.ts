@@ -16,7 +16,10 @@ export default defineConfig({
       formats: ['umd'], // 打包为 UMD 格式
     },
   },
-  plugins: [vue(), qiankun('micro-vue', {
-    useDevMode: true
-  })],
+  plugins: [
+    vue(),
+    qiankun('micro-vue', {
+      useDevMode: true
+    })
+  ],
 })
