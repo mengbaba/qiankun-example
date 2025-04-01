@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot,type Root } from 'react-dom/client'
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
-import './index.css'
 import App from './App.tsx'
 
 let instance: Root | null = null

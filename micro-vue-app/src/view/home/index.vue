@@ -1,3 +1,3 @@
 <template>
-    <div>vue子应用1</div>
+    <div>vue home页面</div>
 </template>

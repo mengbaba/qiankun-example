@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import qiankun from 'vite-plugin-qiankun'
@@ -15,6 +16,11 @@ export default defineConfig({
       fileName: 'micro-react', // 打包后的文件名
       formats: ['umd'], // 打包为 UMD 格式
     },
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    }
   },
   plugins: [
     react(),
